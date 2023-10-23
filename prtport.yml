@@ -1,7 +1,7 @@
 ---
-- name: 'Printer Management'
-  tasks:
-    - name: 'Install Printer port'
+  - name: "Printer Management"
+    tasks:
+    - name: "Install Printer port"
       add_print_port:
         port_address: '10.54.10.100'
         port_name: 'CEO_Printer'

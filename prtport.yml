@@ -2,13 +2,12 @@
 - name: Install the required things
   hosts: all
   collections:
-    - name: 'it_pappa.win_print'
-      version: '1.0.0'
+    - it_pappa.win_print
     
   tasks:
-    - name: "Install Printer port"
+    - name: Install Printer port
       add_print_port:
-        port_address: "10.54.10.100"
+        port_address: 10.54.10.100
         port_name: CEO_Printer
         snmp: public3
         state: present

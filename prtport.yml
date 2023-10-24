@@ -3,7 +3,7 @@
   hosts: all
   collections:
     - name: 'it_pappa.win_print'
-    version: '1.0.0'
+      version: '1.0.0'
     
   tasks:
     - name: "Install Printer port"

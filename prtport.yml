@@ -1,6 +1,10 @@
 ---
 - name: Install the required things
   hosts: all
+  collections:
+    - name: 'it_pappa.win_print'
+    version: '1.0.0'
+    
   tasks:
     - name: "Install Printer port"
       add_print_port:
